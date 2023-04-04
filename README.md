@@ -4,8 +4,17 @@
 
 <br>
 
-1. Replace words with emojis
-2. Replace long words with shorter alternatives
+1. Replace words with emojis - [Emoji Translate](https://github.com/fabriceyhc/emoji_translate)
+2. Replace long words with shorter alternative synonyms - process below
+
+<br>
+
+#### Shorter Synonym Process
+
+* Use `TOP_1000_WORDS` and [Thesaurus API](https://api-ninjas.com/api/thesaurus)
+* Filter list to those synonyms with length < original word
+* Calculate word similarity using [Spacy](https://www.geeksforgeeks.org/python-word-similarity-using-spacy/)
+* Use [Flashtext](https://github.com/vi3k6i5/flashtext) to replace in prompt
 
 <br>
 
