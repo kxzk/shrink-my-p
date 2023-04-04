@@ -18,6 +18,20 @@
 
 <br>
 
+#### Usage
+
+```
+# basic example
+pip3 install -r requirements
+
+python3 shrink_my_p.py
+
+# will need to further validate actual translation with
+# no meaning being lost
+```
+
+<br>
+
 GPT models seem to understand complex meaning from emojis:
 
 <img width="857" alt="Screenshot 2023-04-04 at 10 34 32" src="https://user-images.githubusercontent.com/25046261/229884134-b18a0b0f-496e-4b0f-a439-2fed578a67ec.png">

@@ -6,7 +6,6 @@ if __name__ == "__main__":
 
     emo = Translator(exact_match_only=False, randomize=True)
 
-    # read csv file and process each line
     P_COUNT = 0
     with open("prompts.csv", "r") as f:
         for line in f:
@@ -14,7 +13,10 @@ if __name__ == "__main__":
                 exit()
             line = line.strip()
             line_emoji = emo.emojify(line)
+            print(f"\t{line}")
+            print(f"\t{line_emoji}")
             print(
                 f"PC (og): {len(line)}\tPC (emoji): {len(line_emoji)}\tPC (-): {len(line) - len(line_emoji)}"
             )
+            print()
             P_COUNT += 1
