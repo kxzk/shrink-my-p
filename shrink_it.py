@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+from os import environ
+
+NINJA_API_KEY = environ["NINJA_API_KEY"]
 
 from top_10000_words import TOP_10000_WORDS
 
@@ -8,7 +11,7 @@ if __name__ == "__main__":
 
     for word in TOP_10000_WORDS[:25]:
         api_url = f"https://api.api-ninjas.com/v1/thesaurus?word={word}"
-        response = requests.get(api_url, headers={"X-Api-Key": ""})
+        response = requests.get(api_url, headers={"X-Api-Key": NINJA_API_KEY})
         if response.status_code != requests.codes.ok:
             print(response.text)
 
@@ -21,7 +24,7 @@ if __name__ == "__main__":
                     api_url = "https://api.api-ninjas.com/v1/textsimilarity"
                     response = requests.post(
                         api_url,
-                        headers={"X-Api-Key": ""},
+                        headers={"X-Api-Key": NINJA_API_KEY},
                         json=body,
                     )
                     print(f"{word} - {syn} - {response.json()['similarity']}")
