@@ -8,9 +8,7 @@ if __name__ == "__main__":
 
     for word in TOP_10000_WORDS[:25]:
         api_url = f"https://api.api-ninjas.com/v1/thesaurus?word={word}"
-        response = requests.get(
-            api_url, headers={"X-Api-Key": "CVSVBPb43qV+4fndWDJvcA==8VCXVdU7tbOerPdA"}
-        )
+        response = requests.get(api_url, headers={"X-Api-Key": ""})
         if response.status_code != requests.codes.ok:
             print(response.text)
 
@@ -23,9 +21,7 @@ if __name__ == "__main__":
                     api_url = "https://api.api-ninjas.com/v1/textsimilarity"
                     response = requests.post(
                         api_url,
-                        headers={
-                            "X-Api-Key": "CVSVBPb43qV+4fndWDJvcA==8VCXVdU7tbOerPdA"
-                        },
+                        headers={"X-Api-Key": ""},
                         json=body,
                     )
                     print(f"{word} - {syn} - {response.json()['similarity']}")
