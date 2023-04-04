@@ -1,4 +1,4 @@
-<h3 align="center">SHRINK MY P</h3>
+<h3 align="center">SHRINK MY P (WIP)</h3>
 
 > Essentially, seeing how much we can shrink the prompt without losing meaning.
 
