@@ -5,7 +5,7 @@
 <br>
 
 1. Replace words with emojis - [Emoji Translate](https://github.com/fabriceyhc/emoji_translate)
-2. Replace long words with shorter alternative synonyms - process below
+2. Replace long words with shorter synonyms - process below
 
 <br>
 
