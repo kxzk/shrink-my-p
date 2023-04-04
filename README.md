@@ -8,6 +8,8 @@
 
 2. Replace long words with shorter synonyms - process below
 
+https://api-ninjas.com/api/textsimilarity
+
 <br>
 
 #### Shorter Synonym Process
